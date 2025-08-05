@@ -41,7 +41,7 @@ def test_happy_login(driver, base_url, capture_dir):
     login_button.click()
 
     # 5)
-    pytest.raises(AssertionError)
+    time.sleep(1)
     assert "/home.php" in driver.current_url
 
     # 6)
