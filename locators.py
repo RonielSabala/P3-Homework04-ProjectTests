@@ -14,4 +14,7 @@ LOCATORS = {
     "create_button": "button#btn-create",
     # Details locators
     "details_buttons": "table.table tbody a.btn-detail",
+    # Edit locators
+    "edit_buttons": "table.table tbody a.btn-warning",
+    "update_button": "button#btn-edit",
 }
