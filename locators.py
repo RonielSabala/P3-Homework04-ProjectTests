@@ -12,4 +12,6 @@ LOCATORS = {
     "email_field": "input#email",
     # Create locators
     "create_button": "button#btn-create",
+    # Details locators
+    "details_buttons": "table.table tbody a.btn-detail",
 }
