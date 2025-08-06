@@ -1,6 +1,6 @@
 import pytest
-from selenium import webdriver
 from pathlib import Path
+from selenium import webdriver
 
 
 def pytest_addoption(parser):
@@ -19,16 +19,16 @@ def base_url(request):
 
 @pytest.fixture(scope="function")
 def driver(request):
-    drv = webdriver.Chrome()
-    drv.implicitly_wait(5)
-    yield drv
-    drv.quit()
+    driver = webdriver.Chrome()
+    driver.implicitly_wait(5)
+    yield driver
+    driver.quit()
 
 
 @pytest.fixture(scope="function")
 def capture_dir(request):
     test_name = request.node.name
     story = Path(request.node.fspath).parent.name
-    base = Path(request.config.rootdir) / "captures" / story / test_name
+    base = Path(request.config.rootdir) / "results/captures" / story / test_name
     base.mkdir(parents=True, exist_ok=True)
     return str(base)

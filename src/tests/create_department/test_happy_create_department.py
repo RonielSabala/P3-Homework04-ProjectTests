@@ -1,8 +1,8 @@
 import time
 import pytest
 from tests.utils import login
-from selenium.webdriver.common.by import By
 from locators import LOCATORS
+from selenium.webdriver.common.by import By
 
 
 @pytest.mark.usefixtures("driver", "base_url", "capture_dir")
@@ -10,7 +10,7 @@ def test_happy_create_department(driver, base_url, capture_dir):
     """
     Registrar un departamento con datos válidos.
 
-    **Pasos**:
+    Pasos:
         1) Loguearse con usuario y contraseña válidos.
         2) Ir a /departments/create.php.
         3) Rellenar "Dept. Name" con "Departamento Test".

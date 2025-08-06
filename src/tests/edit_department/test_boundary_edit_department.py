@@ -1,8 +1,8 @@
 import time
 import pytest
-from selenium.webdriver.common.by import By
-from locators import LOCATORS
 from tests.utils import login
+from locators import LOCATORS
+from selenium.webdriver.common.by import By
 
 
 def get_elements(driver):
@@ -26,7 +26,7 @@ def test_boundary_edit_department(driver, base_url, capture_dir):
     """
     Probar longitud máxima en cada campo.
 
-    **Pasos**:
+    Pasos:
         1) Loguearse con usuario y contraseña válidos.
         2) Ir a /departments/home.php.
         3) Hacer clic en el botón de editar del último departamento en la lista.

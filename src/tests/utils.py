@@ -1,16 +1,16 @@
 import time
-from selenium.webdriver.common.by import By
 from locators import LOCATORS
+from selenium.webdriver.common.by import By
 
 
 def login(driver, base_url):
     """
-    Función para rehusar el código de loguearse.
+    Función que reutiliza el código para hacer login.
 
     Pasos:
         1) Ir a /auth/login.php.
         2) Ingresar usuario y contraseña.
-        3) Clic en Ingresar y esperar home.
+        3) Hacer clic en Ingresar y esperar home.
     """
 
     driver.get(f"{base_url}/auth/login.php")

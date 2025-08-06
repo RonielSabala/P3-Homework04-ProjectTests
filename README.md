@@ -1,45 +1,43 @@
 # ThesisHub - Tests
 
-Este repositorio contiene las pruebas automatizadas para el proyecto funcional (**ThesisHub**).
+Repositorio con las pruebas automatizadas para el proyecto funcional (**ThesisHub**).
 
 ---
 
 _Requisitos_:
 
-- Python 3.6 o superior
+- Python 3.6+
 - [pytest](https://docs.pytest.org/)
 - [pytest-html](https://github.com/pytest-dev/pytest-html)
 - [Selenium](https://www.selenium.dev/)
 
-Puedes instalarlos con:
+Para instalar las librerías necesarias, ejecuta:
 
 ```bash
-pip install pytest pytest-html selenium
+pip install -r requirements.txt
 ```
 
-# Instrucciones para ejecutar los tests
+# Instrucciones
 
-## 1. Ejecución del repositorio funcional
+## 1. Instalación
 
-Clona el repositorio [P3-Homework04-BaseProject](https://github.com/RonielSabala/P3-Homework04-BaseProject) y sigue sus instrucciones para ejecutarlo.
+Clona o descarga este repositorio.
 
-## 2. Ejecución de las pruebas
+## 2. Ejecución del repositorio funcional
 
-Desde la raíz de este repositorio, ejecuta:
+Clona o descarga el repositorio [P3-Homework04-BaseProject](https://github.com/RonielSabala/P3-Homework04-BaseProject) y sigue sus instrucciones para ejecutarlo.
+
+## 3. Ejecución de los tests
+
+En la raíz de **este** proyecto (`src/`), ejecuta:
 
 ```bash
 pytest
 ```
 
-## 3. Resultados
+## 4. Resultados
 
-### 3.1. Capturas de pantalla
-
-Se generan automáticamente en la ruta `captures/`.
-
-### 3.2. Reporte HTML
-
-Se genera automáticamente en la ruta `reports/report.html`. Para visualizarlo solo tienes que abrirlo en tu navegador.
+Se generará una carpeta `src/results/` (si no existe previamente) en donde se guardarán las **capturas de pantalla** y un **reporte HTML** de los tests ejecutados.
 
 ---
 

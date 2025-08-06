@@ -1,21 +1,21 @@
 import time
 import pytest
-from selenium.webdriver.common.by import By
-from locators import LOCATORS
 from tests.utils import login
+from locators import LOCATORS
+from selenium.webdriver.common.by import By
 
 
 @pytest.mark.usefixtures("driver", "base_url", "capture_dir")
-def test_negative_delete_department(driver, base_url, capture_dir):
+def test_negative_details_department(driver, base_url, capture_dir):
     """
     Verificar error con ID ausente o inválido.
 
-    **Pasos**:
+    Pasos:
         1) Loguearse con usuario y contraseña válidos.
-        2) Ir a /departments/delete.php.
+        2) Ir a /departments/details.php
         3) Verificar mensaje "No se especificó el departamento.".
         4) Captura de pantalla.
-        5) Ir a /departments/delete.php?id=9999
+        5) Ir a /departments/details.php?id=9999
         6) Verificar mensaje "No se encontró el departamento.".
         7) Captura de pantalla.
     """
@@ -24,7 +24,7 @@ def test_negative_delete_department(driver, base_url, capture_dir):
     login(driver, base_url)
 
     # 2)
-    driver.get(f"{base_url}/departments/delete.php")
+    driver.get(f"{base_url}/departments/details.php")
     time.sleep(1)
 
     # 3)
@@ -35,7 +35,7 @@ def test_negative_delete_department(driver, base_url, capture_dir):
     driver.save_screenshot(f"{capture_dir}/step4_no_id.png")
 
     # 5)
-    driver.get(f"{base_url}/departments/delete.php?id=9999")
+    driver.get(f"{base_url}/departments/details.php?id=9999")
     time.sleep(1)
 
     # 6)

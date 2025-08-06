@@ -10,7 +10,7 @@ def test_happy_login(driver, base_url, capture_dir):
     Verificar que un usuario con credenciales válidas pueda loguearse
     con éxito.
 
-    **Pasos**:
+    Pasos:
         1) Ir a /auth/login.php.
         2) Localizar campo "usuario" y escribir usuario válido de prueba.
         3) Localizar campo "contraseña" y escribir la contraseña válida.

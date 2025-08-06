@@ -9,7 +9,7 @@ def test_boundary_credentials_login(driver, base_url, capture_dir):
     """
     Probar validaciones de longitud máxima en los campos.
 
-    **Pasos**:
+    Pasos:
         1) Ir a /auth/login.php.
         2) Ingresar en "usuario" una cadena de 51 caracteres.
         3) Ingresar contraseña válida.

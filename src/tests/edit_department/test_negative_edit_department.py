@@ -1,8 +1,8 @@
 import time
 import pytest
-from selenium.webdriver.common.by import By
-from locators import LOCATORS
 from tests.utils import login
+from locators import LOCATORS
+from selenium.webdriver.common.by import By
 
 
 @pytest.mark.usefixtures("driver", "base_url", "capture_dir")
@@ -10,7 +10,7 @@ def test_negative_edit_department(driver, base_url, capture_dir):
     """
     Editar el nombre de departamento con un nombre de otro ya existente.
 
-    **Pasos**:
+    Pasos:
         1) Loguearse con usuario y contraseña válidos.
         2) Ir a /departments/home.php.
         3) Hacer clic en el botón de editar del último departamento en la lista.

@@ -15,9 +15,9 @@ LOCATORS = {
     # Details locators
     "details_buttons": "table.table tbody a.btn-detail",
     # Edit locators
-    "edit_buttons": "table.table tbody a.btn-warning",
     "update_button": "button#btn-edit",
+    "edit_buttons": "table.table tbody a.btn-warning",
     # Delete locators
-    "delete_buttons": "table.table tbody a.btn-danger",
     "delete_button": "button#btn-delete",
+    "delete_buttons": "table.table tbody a.btn-danger",
 }

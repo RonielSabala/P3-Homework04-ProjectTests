@@ -9,7 +9,7 @@ def test_negative_login(driver, base_url, capture_dir):
     """
     Intentar acceso con credenciales inválidas.
 
-    **Pasos**:
+    Pasos:
         1) Ir a /auth/login.php.
         2) Introducir usuario inexistente y contraseña cualquiera.
         3) Hacer clic en "Ingresar".
