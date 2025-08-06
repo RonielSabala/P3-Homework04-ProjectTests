@@ -23,7 +23,7 @@ pip install -r requirements.txt
 
 Clona o descarga este repositorio.
 
-## 2. Ejecución del repositorio funcional
+## 2. Ejecución del proyecto funcional
 
 Clona o descarga el repositorio [P3-Homework04-BaseProject](https://github.com/RonielSabala/P3-Homework04-BaseProject) y sigue sus instrucciones para ejecutarlo.
 
