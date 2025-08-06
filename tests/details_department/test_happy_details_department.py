@@ -26,6 +26,7 @@ def test_happy_details_department(driver, base_url, capture_dir):
     time.sleep(1)
 
     # 3)
+    driver.save_screenshot(f"{capture_dir}/step3_before_click.png")
     buttons = driver.find_elements(By.CSS_SELECTOR, LOCATORS["details_buttons"])
     buttons[-1].click()
     time.sleep(1)
